@@ -1,0 +1,238 @@
+/* 改变主题色变量 */
+$--color-primary: #2A68D3;
+
+.el-button,
+.el-input__inner {
+  border-radius: 0 !important;
+}
+
+* {
+  list-style: none;
+}
+button.xzht-button{
+  padding: 9px 23px;
+}
+.znzx-jqr {
+  position: fixed;
+  right: 56px;
+  bottom: 58px;
+}
+// 表格头部
+.header-row {
+  th.is-leaf {
+    text-align: center;
+    border-top: 1px solid #EBEEF5;
+    color: rgba(88, 100, 122, 1);
+    background: rgba(245, 247, 251, 1);
+
+    .cell {
+      font-weight: 500;
+    }
+  }
+}
+
+.header-row1 {
+  th.is-leaf {
+    text-align: center;
+    border-top: 1px solid #ebeef5;
+    color: rgba(88, 100, 122, 1);
+    background: rgba(228, 236, 252, 1);
+
+    .cell {
+      font-weight: 500;
+    }
+  }
+}
+
+.el-table th {
+  padding: 15px 0 !important;
+}
+
+.el-table td {
+  padding: 13px 0 !important;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+// 弹窗统一样式
+.el-dialog {
+  .el-dialog__header {
+    border-bottom: 1px solid rgba(221, 228, 235, 1);
+    line-height: 50px;
+    padding: 0 25px;
+    margin-bottom: 0;
+
+    .el-dialog__title {
+      font-size: 17px;
+      font-weight: 500;
+      color: rgba(22, 36, 61, 1);
+      position: relative;
+      padding-left: 21px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 14px;
+        height: 16px;
+        background-size: 100% 100%;
+        top: 4px;
+        left: 0
+      }
+    }
+  }
+
+  .el-dialog__body {
+    padding: 30px 40px;
+  }
+
+  .el-dialog__footer {
+    text-align: center;
+    padding: 10px 0 35px;
+
+    .el-button {
+      width: 110px;
+    }
+
+    .el-button+.el-button {
+      margin-left: 37px;
+    }
+  }
+}
+
+// 标题名称
+.text-div {
+  margin: 24px 0 24px 14px;
+  line-height: 17px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(22, 36, 61, 1);
+
+  img {
+    width: 14px;
+    height: 16px;
+    vertical-align: top;
+    margin-right: 7px;
+  }
+}
+
+// 超出隐藏 省略号
+.nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+
+// 暂无数据
+.no-data {
+  text-align: center;
+  line-height: 100px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+
+  img {
+    width: 43px;
+    height: 35px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+.line350{
+  line-height: 350px;
+}
+.margin3040 {
+  margin: 30px 40px;
+}
+.margin304020{
+  margin: 30px 40px 20px;
+}
+.draft-title-div {
+  border-bottom: 1px solid rgba(237, 237, 237, 1);
+  padding: 17px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(22, 36, 61, 1);
+  i {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #58647a;
+    cursor: pointer;
+  }
+}
+// 
+.info-tables-div {
+  padding: 0 12px;
+
+  /deep/ .el-table {
+    width: 100%;
+
+    /deep/ .el-table__expand-column {
+      .cell {
+        padding: 0;
+      }
+
+      .el-table__expand-icon.el-table__expand-icon--expanded {
+        display: none;
+      }
+    }
+  }
+
+  // 招标信息 详情
+  .table-ul {
+    li {
+      line-height: 40px;
+      padding-left: 48px;
+      color: rgba(22, 36, 61, 1);
+
+      >span:first-of-type {
+        width: 100px;
+        display: inline-block;
+        color: rgba(88, 100, 122, 1);
+      }
+    }
+
+    li:nth-of-type(3) {
+      padding-left: 30px;
+
+      >span {
+        width: auto;
+        color: rgba(88, 100, 122, 1);
+
+        img {
+          width: 15px;
+          height: 15px;
+          vertical-align: initial;
+          margin-right: 10px;
+        }
+      }
+
+      >section {
+        display: inline-block;
+        margin-right: 45px;
+
+        img {
+          width: 18px;
+          height: 18px;
+          vertical-align: initial;
+          margin-right: 10px;
+        }
+
+        i {
+          margin-left: 13px;
+          color: #2a68d3;
+        }
+      }
+    }
+  }
+}
+
+// $--color-primary: #1b1f40;
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
