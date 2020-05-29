@@ -19,9 +19,13 @@
 import { Component, Vue } from 'vue-property-decorator'
 import LayoutHeader from '@/components/Layout/LayoutHeader.vue'
 @Component({
-    components: { LayoutHeader }
+  components: { LayoutHeader }
 })
-export default class Layout extends Vue {}
+export default class Layout extends Vue {
+  created () {
+    console.log(31)
+  }
+}
 </script>
 
 <style lang="scss" scoped>

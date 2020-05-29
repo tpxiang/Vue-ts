@@ -1,5 +1,5 @@
-import Vue from 'Vue'
-import Vuex from 'Vuex'
+import Vue from 'vue'
+import Vuex from 'vuex'
 import state from './state'
 import getters from './getters'
 import mutations from './mutations'

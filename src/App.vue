@@ -5,17 +5,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { State, Getter, Mutation, Action } from "vuex-class";
+import { Component, Vue } from 'vue-property-decorator'
 @Component({
   components: {}
 })
 export default class App extends Vue {
-  // 存储用户信息
-  @Action("setUser") setUser: any;
-  created() {
-    this.setUser(localStorage.tsToken);
-  }
 }
 </script>
 
