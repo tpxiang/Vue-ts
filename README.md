@@ -1,4 +1,4 @@
-# vuets-app
+# vue-ts项目模板
 
 ## Project setup
 ```
