@@ -18,6 +18,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import LayoutHeader from '@/components/Layout/LayoutHeader.vue'
+
 @Component({
   components: { LayoutHeader }
 })

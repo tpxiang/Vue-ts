@@ -30,13 +30,10 @@ const responseHandlers = {
   // 未登录,提示duration跳转登陆
   [statusCode.NOT_LOGIN]: (res: any) => {
     // 如果当前页面不是登陆，则跳转到登陆
-    if (router.currentRoute.name !== 'login' || router.currentRoute.name !== 'backstageLogin') {
+    if (router.currentRoute.name !== 'login') {
       setTimeout(() => {
         router.push({
-          name: 'login',
-          // query: {
-          //   redirect: router.currentRoute.fullPath
-          // }
+          name: 'login'
         })
       }, duration)
     }
@@ -73,9 +70,6 @@ const responseHandlers = {
     setTimeout(() => {
       router.push({
         name: 'login',
-        // query: {
-        //   redirect: router.currentRoute.fullPath
-        // }
       })
     }, duration)
     return Promise.reject(res)
@@ -105,9 +99,6 @@ instance.interceptors.response.use(async (res: any) => {
   }
   return res.data
 }, (err: any) => {
-  // router.push({
-  //   name: 'error'
-  // })
   Promise.reject(err)
 })
 

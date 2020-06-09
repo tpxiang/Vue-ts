@@ -12,7 +12,6 @@ export default class Login extends Vue {
   created () {
     this.login()
   }
-
   login () {
     const data: object = {
       account: '13200000000',
